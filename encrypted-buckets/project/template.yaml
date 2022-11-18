@@ -31,7 +31,7 @@ Resources:
         BlockPublicPolicy: True
         IgnorePublicAcls: True
         RestrictPublicBuckets: True
-      BucketName: !Sub 'sagemaker-${SageMakerProjectName}-artifacts'
+      BucketName: !Sub 'sagemaker-${SageMakerProjectName}-${SageMakerProjectId}-artifacts'
       BucketEncryption:
         ServerSideEncryptionConfiguration: 
         - ServerSideEncryptionByDefault:
