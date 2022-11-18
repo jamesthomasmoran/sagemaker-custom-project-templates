@@ -77,8 +77,8 @@ Resources:
         ${SageMakerProjectName}
       Code:
         S3:
-          Bucket: sagemaker-servicecatalog-seedcode-us-east-1
-          Key: toolchain/model-building-workflow-v1.0.zip
+          Bucket: ee-assets-prod-us-east-1
+          Key: modules/ffb7c8ac57264ea0a49e5e882ea7b0a2/v1/model-building-workflow-v1.0.zip
         BranchName: main
   SageMakerModelPipelineBuildProject:
     Type: 'AWS::CodeBuild::Project'
